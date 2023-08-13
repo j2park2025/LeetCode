@@ -13,15 +13,8 @@ class Solution:
             elif (nums[mid] < target): # ex1 = mid:2, nums[mid] = 3 < 9 O
                 left = mid+1 # left = 원래 0, mid = 2+1 left 가 3 right 는 아직 5
                 mid = int(right+left/2) # 4
-        # if (target<nums[0]) or (target>nums[len(nums)-1]):
         return -1
-        # elif (len(nums)==1) or (len(nums)==2):
-        #     for i in range(len(nums)):
-        #         if (nums[i] == target):
-        #             return i
-        #     return -1
-        # else:
-        #     return -1
+        
     '''
 
     when target is not in nums:
